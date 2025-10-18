@@ -1,0 +1,106 @@
+:root {
+    /* 3-5 color palette: primary + neutrals + one accent */
+    --primary: #2563eb;
+    /* blue */
+    --bg: #f3f4f6;
+    /* light gray background */
+    --card: #ffffff;
+    /* white card */
+    --text: #111827;
+    /* near-black text */
+    --success: #10b981;
+    /* green accent for "Normal" */
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+#signup-form {
+    display: none;
+}
+
+#spin-loading {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #111827;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.wrapper {
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    margin-bottom: -14px;
+}
+
+.userProfile {
+    width: 400px;
+    max-width: 420px;
+    background-color: var(--card);
+    Border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08), 0 8px 24px rgba(15, 23, 42, 0.08);
+    padding: 24px;
+    /* display: none; */
+}
+
+.card {
+    width: 400px;
+    max-width: 420px;
+    background-color: var(--card);
+    Border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08), 0 8px 24px rgba(15, 23, 42, 0.08);
+    padding: 24px;
+}
+
+#logout-btn {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #dc2626;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
